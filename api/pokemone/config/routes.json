@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pokemones",
+      "handler": "pokemone.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pokemones/count",
+      "handler": "pokemone.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pokemones/:id",
+      "handler": "pokemone.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pokemones",
+      "handler": "pokemone.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pokemones/:id",
+      "handler": "pokemone.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pokemones/:id",
+      "handler": "pokemone.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
